@@ -1,11 +1,34 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-style: 16px;
+  line-height: 1.5;
+  font-family: "Open Sans","Arial", sans-serif;
+  color: #444444;
+}
+
 .site-header{
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+.site-header-actions{
+display: flex;
+align-items: center;
+}
+
+.sitenav-list{
+  list-style:none;
+  display: flex;
+}
+
 .sitenav-link{
   font-style: normal;
   font-weight: bold;
+  font-family:"Open Sans";
   font-size: 14px;
-  line-height: 150%;
+  line-height: 21px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
@@ -25,6 +48,9 @@
 .hero{
   background-color: #0EB4C1;;
   color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .hero-content{
   width: 500px;
@@ -35,16 +61,15 @@
 }
 .hero-heading{
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: "Open Sans;
   font-size: 36px;
-  line-height: 120%;
+  line-height: 43.2px;
 }
 .hero-text{
   font-size: 18px;
   line-height: 150%;
-}
-.features{
-
+  font-family: "Open Sans", sans-serif;
 }
 
 .features-heading{
@@ -55,7 +80,62 @@
   line-height:43px;
   color: #000000;
 }
+
+.feature{
+width: 600px;
+}
+
 .features-list{
  width: 864px;
+ display: flex;
+ align-items: center;
+}
+.features-title{
+  font-size: 24px;
+  line-height:29px;
+  color: #222222;
+}
+.features-info{
+  font-size: 16px;
+  line-height:24px;
+  color: #444444;
+}
+.reception{
+background-color: #0EB4C1;
+color: #FFFFFF;
+width: 1440px;
+}
 
+.reception-heading{
+font-weight: bold;
+font-size: 36px;
+line-height:43px;
+
+
+}
+.reception-text{
+  font-size: 15px;
+  line-height:18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-footer{
+background: #222222;
+
+}
+.sitenavlist-bottom{
+  list-style: none;
+}
+
+.sitenav-link-bottom{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
 }
