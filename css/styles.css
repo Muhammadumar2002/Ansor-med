@@ -1,26 +1,57 @@
+*{
+  box-sizing: border-box;
+}
 body{
   padding: 0;
   margin: 0;
-  font-style: 16px;
+  font-style: 16 px;
   line-height: 1.5;
   font-family: "Open Sans","Arial", sans-serif;
   color: #444444;
 }
 
+*:focus{
+outline: 2px double #DE2E54;
+outline-offset: 2px;
+}
+
+.container{
+width: 100%;
+max-width:;
+padding-left: 30px;
+padding-right: 30px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.site-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .site-header{
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .site-header-actions{
-display: flex;
-align-items: center;
+ display: flex;
+ align-items: center;
 }
 
 .sitenav-list{
   list-style:none;
   display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.sitenav-item:not(last-child){
+  margin-right: 32px;
 }
 
 .sitenav-link{
@@ -32,9 +63,23 @@ align-items: center;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
   color: #222222;
 }
+.sitenav-link:hover {
+  color: #DE2E54;
+}
+.sitenav-link:active{
+  opacity: 0.6;
+}
+
 .main-link{
+  display: block;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 12px;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -45,6 +90,16 @@ align-items: center;
  background: #DE2E54;
  text-decoration: none;
 }
+.main-link:hover{
+  background-color: #fff;
+  color: #DE2E54;
+}
+.main-link:active{
+background-color:#DE2E54; ;
+color: #fff;
+opacity: 0.6;
+}
+
 .hero{
   background-color: #0EB4C1;;
   color: #FFFFFF;
@@ -122,20 +177,36 @@ line-height:43px;
 }
 
 .site-footer{
-background: #222222;
-
+  background: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-footer-actions{
+  display: flex;
+  align-items: center;
 }
 .sitenavlist-bottom{
   list-style: none;
+  display: flex;
 }
 
 .sitenav-link-bottom{
   font-style: normal;
   font-weight: bold;
+  font-family:"Open Sans";
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+}
+.sitenav-link-bottom:hover{
+  color: #DE2E54;
 }
