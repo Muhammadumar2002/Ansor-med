@@ -8,10 +8,10 @@
 
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
-<!-- STYLES -->
+  <!-- STYLES -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,111 +21,132 @@
 
   <header class="site-header">
     <div class="site-header-container  container">
-      <a class="site-header-logo" href="index.html">
-        <img class="site-header-img" src="./img/logo-icon.jpg" alt="duhtur aka" width="50" height="50" srcset="./img/logo-icon.jpg 1x, ./img/logo-icon.jpg2x">
-        <span class="site-header-heading">AnsorMed</span>
-         </a>
-      <div class="site-header-actions">
-        <nav>
-          <ul class="sitenav-list">
-            <li class="sitenav-item"><a class="sitenav-link" href="#">Xizmatlar</a></li>
-            <li class="sitenav-item"><a class="sitenav-link" href="#">Dorilar</a></li>
-            <li class="sitenav-item"><a class="sitenav-link" href="#">Asal</a></li>
-            <li class="sitenav-item"><a class="sitenav-link" href="#">Kontaktlar</a></li>
-            <li class="sitenav-item"><a class="sitenav-link" href="#">Blog</a></li>
-          </ul>
-        </nav>
-        <a class="main-link" href="#">Qabulga Yozilish</a>
-      </div>
+      <a class="site-header-logo" href="#">
+        <img class="site-header-img" src="./img/logo-icon.jpg" alt="Doctor" width="50" height="50" srcset="./img/logo-icon.jpg 1x, ./img/logo-icon.jpg2x">
+        <span class="site-header-logo-text">AnsorMed</span>
+      </a>
+         <!-- SITENAV -->
+      <nav class="sitenav">
+        <ul class="sitenav-list">
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Xizmatlar</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Dorilar</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Asal</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Kontaktlar</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <a class="main-link" href="#reception">Qabulga Yozilish</a>
     </div>
   </header>
+
+  <!-- Hero -->
   <Main>
-
-
     <section class="hero">
-      <div class="hero-content">
-        <!-- Hero -->
-        <!-- Features -->
-        <img class="hero-img" src="img/hero-img (1).png" alt="Doctor" width="423" height="492.65">
-
-        <h2 class="hero-heading">Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h2>
-
-        <p class="hero-text">Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan kasalliklarni yengishda yordam beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.</p>
-
-        <a class="main-link"  href="#">Qabulga Yozilish</a>
+      <div class="hero-container container">
+        <div class="hero-content">
+          <h2 class="hero-heading">Tabiiy davolash usullari yordamida kasalliklardan xalos bo’ling.</h2>
+          <p class="hero-text">Hijoma, manual terapiya, zuluk va turli tabiiy giyohlar eng ko’p uchraydigan kasalliklarni yengishda yordam beradi. Sog’ligingizni o’z ishining professionallariga ishonib topshiring.</p>
+          <a class="main-link main-link-solid"  href="#reception">Qabulga Yozilish</a>
       </div>
+      <img class="hero-img" src="img/hero-img (1).png" alt="Doctor" width="423" height="504">
+    </div>
     </section>
 
-
-
-      <!-- Features -->
+    <!-- Features -->
 
 
     <section class="features">
-      <h2 class="features-heading">Xizmatlar</h2>
+      <div class="features container container">
+        <h2 class="features-heading">Xizmatlar</h2>
         <ul class="features-list">
-          <li class="feature">
-            <img src="img/image 1.jpg" alt="Hijoma" width="200" height="200">
-
-            <h3 class="features-title">Hijoma</h3>
-            <p class="features-info">Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu alayhi va sallam dedilar: «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19 va 21-kunlardir» (bu kunlar hijrij-kamariy hisobdagi oylar kunlaridir).</p>
-          </li>
-          <li class="feature">
-            <img src="img/image 2.jpg" alt="Manual terapiya" width="200" height="200">
-
-            <h3 class="features-title">Manual terapiya</h3>
-            <p class="features-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
-          </li>
-          <li class="feature">
-            <img src="img/image 3.jpg" alt="Zuluk bilan davolash" width="200" height="200">
-
-            <h3 class="features-title">Zuluk bilan davolash</h3>
-            <p class="features-info">Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni dorivor zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil tibbiyotga oid sanaladi. Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi, qolganlari shifobaxsh ta’sir ko’rsatmaydi.</p>
-          </li>
-          <li class="feature">
-            <img src="img/image 4.jpg" alt="Tabiiy dori vositalari" width="200" height="200">
-
-            <h3 class="features-title">Tabiiy dori vositalari</h3>
-            <p class="features-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
+          <li class="feature-item feature">
+            <img class="feature-img" src="img/image 1.jpg" alt="" width="200" height="200">
+            <div class="feature-content">
+              <h3 class="features-title">Hijoma</h3>
+              <p class="features-info">Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu alayhi va sallam dedilar: «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19 va 21-kunlardir» (bu kunlar hijrij-kamariy hisobdagi oylar kunlaridir).</p>
+             </li>
+             <li class="feature">
+              <img  class="feature-img"  src="img/image 2.jpg" alt="" width="200" height="200">
+              <h3 class="features-title">Manual terapiya</h3>
+              <p class="features-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
+             </li>
+             <li class="feature">
+              <img  class="feature-img"  src="img/image 3.jpg" alt="" width="200" height="200">
+              <h3 class="features-title">Zuluk bilan davolash</h3>
+              <p class="features-info">Girudoterapiya (lot. hirūdō — «zuluk» va qad. yun. θεραπεία — «davolash») — ma’lum kasalliklarni dorivor zuluklar (Hirudo medicinalis) yordamida davolash usuli. Fizioterapevtik muolaja, muqobil tibbiyotga oid sanaladi. Bunday zuluklar ushbu kichik sinf chuvchalchanglariga oid yagona tur hisoblanadi, qolganlari shifobaxsh ta’sir ko’rsatmaydi.</p>
+             </li>
+             <li class="feature">
+              <img  class="feature-img"  src="img/image 4.jpg" alt="" width="200" height="200">
+              <h3 class="features-title">Tabiiy dori vositalari</h3>
+              <p class="features-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
+            </div>
           </li>
         </ul>
-
-          <a class="main-link"  href="#">Qabulga Yozilish</a>
-      </section>
-
-
-    <section class="reception">
-      <div>
-        <h2 class="reception-heading">Qabulga ro’yxatdan o’ting</h2>
-        <a class="reception-text" href="#">Qo’ng’iroq qilish</a>
-        <a class="reception-text" href="#">Telegramdan yozish</a>
+        <div class="index-services-actions">
+          <a class="main-link"  href="#reception">Qabulga Yozilish</a></div>
       </div>
     </section>
 
-  </Main>
 
+    <section class="reception" id="reception">
+      <div class=" container">
+        <h2 class="reception-heading">Qabulga ro’yxatdan o’ting</h2>
+        <div class="reception-links">
+          <a class=" reception-links-item  main-link main-link-outline" href="tel:+998901333344">Qo’ng’iroq qilish</a>
+          <a class=" reception-links-item main-link main-link-outline" href="http://t.me/ansor_admint" target="_blank">Telegramdan yozish</a>
+        </div>
+      </div>
+    </section>
+  </Main>
   <!-- Footer-->
 
+  <header class="site-footer">
+    <div class="site-footer-container  container">
+      <a class="site-header-logo site-logo-site-footer" href="#">
+        <img class="site-header-img" src="./img/logo-icon.jpg" alt="Doctor" width="50" height="50" srcset="./img/logo-icon.jpg 1x, ./img/logo-icon.jpg2x">
+        <span class="site-header-logo-text">AnsorMed</span>
+      </a>
+         <!-- SITENAV -->
+      <nav class="sitenav sitenav-site-footer">
+        <ul class="sitenav-list">
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Xizmatlar</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Dorilar</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Asal</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Kontaktlar</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#">Blog</a></li>
+        </ul>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
   <footer class="site-footer">
     <div  class="site-footer-container container">
-      <div class="site-footer-actions">
-        <a class="site-header-logo" href="index.html">
-        <img class="site-header-img" src="./img/logo-icon.jpg" alt="duhtur aka" width="50" height="50" srcset="./img/logo-icon.jpg 1x, ./img/logo-icon.jpg2x">
+      <a class="site-header-logo" href="#">
+        <img class="site-header-img" src="./img/logo-icon.jpg" alt="Doctor" width="50" height="50" srcset="./img/logo-icon.jpg 1x, ./img/logo-icon.jpg2x">
         <span class="site-header-heading site-footer-heading">AnsorMed</span>
-        </a>
-        <nav>
-          <ul class="sitenavlist-bottom">
-            <li><a class="sitenav-link-bottom" href="#">Xizmatlar</a></li>
-            <li><a class="sitenav-link-bottom" href="#">Dorilar</a></li>
-            <li><a class="sitenav-link-bottom" href="#">Asal</a></li>
-            <li><a class="sitenav-link-bottom" href="#">Kontaktlar</a></li>
-            <li><a class="sitenav-link-bottom" href="#">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
+      </a>
+      <nav class="sitenav sitenav-site-footer ">
+        <ul class="sitenavlist-bottom">
+          <li><a class="sitenav-link-bottom" href="#">Xizmatlar</a></li>
+          <li><a class="sitenav-link-bottom" href="#">Dorilar</a></li>
+          <li><a class="sitenav-link-bottom" href="#">Asal</a>
+          </li>
+          <li><a class="sitenav-link-bottom" href="#">Kontaktlar</a></li>
+          <li><a class="sitenav-link-bottom" href="#">Blog</a></li>
+        </ul>
+      </nav>
     </div>
-  </footer>
-
-
+  </footer> -->
 </body>
 </html>
